@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/Logo.svg" alt="Logo de Alura" class="logo">
+    </header>
+
+    <main>
+
+        <section>
+
+            <textarea name="" id="textUser" cols="30" rows="10" placeholder="Ingrese su Texto aqui" required></textarea>
+
+            <p class="info"><img src="img/info.svg" alt="logo-info">Solo letras minúsculas y sin acentos</p>
+
+            <div class="botones">
+                <button id="btnEncriptar" onclick="encriptar();">Encriptar</button>
+                <button id="btnDesencriptar" onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+
+            <div id="container-inicio">
+
+                <div id="mensaje-inicio">
+                    <img src="img/Muñeco.svg" alt="Muñeco" class=" muñeco">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+
+            </div>
+
+            <div id="container-resultado">
+                
+                <div id="mensaje-resultado">
+                    <textarea name="resultado" id="textResultado" cols="20" rows="10"></textarea>
+
+                    <button id="btnCopiar" onclick="copiar();">Copiar</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
